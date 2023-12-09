@@ -278,7 +278,7 @@ class Bilibili(VideoExtractor):
                     else:
                         message = api_playinfo['data']['message']
                 if best_quality is None or qn <= best_quality:
-                    api_url = self.bilibili_interface_api(cid, qn=qn)
+                    api_url = self.bilibili_api(avid, cid, qn=qn)
                     api_content = get_content(api_url, headers=self.bilibili_headers(referer=self.url))
                     api_playinfo_data = json.loads(api_content)
                     if api_playinfo_data.get('quality'):
