@@ -61,21 +61,8 @@ The following dependencies are recommended:
 * **[FFmpeg](https://www.ffmpeg.org/)** 1.0 or above
 * (Optional) [RTMPDump](https://rtmpdump.mplayerhq.hu/)
 
-### Option 1: Install via pip
 
-The official release of `you-get` is distributed on [PyPI](https://pypi.python.org/pypi/you-get), and can be installed easily from a PyPI mirror via the [pip](https://en.wikipedia.org/wiki/Pip_\(package_manager\)) package manager. Note that you must use the Python 3 version of `pip`:
-
-    $ pip3 install you-get
-
-### Option 2: Install via [Antigen](https://github.com/zsh-users/antigen) (for Zsh users)
-
-Add the following line to your `.zshrc`:
-
-    antigen bundle soimort/you-get
-
-### Option 3: Download from GitHub
-
-You may either download the [stable](https://github.com/soimort/you-get/archive/master.zip) (identical with the latest release on PyPI) or the [develop](https://github.com/soimort/you-get/archive/develop.zip) (more hotfixes, unstable features) branch of `you-get`. Unzip it, and put the directory containing the `you-get` script into your `PATH`.
+### Option 3: Download from my repo
 
 Alternatively, run
 
@@ -104,26 +91,11 @@ you-get: version 0.4.1555, a tiny downloader that scrapes the web.
 This is the recommended way for all developers, even if you don't often code in Python.
 
 ```
-$ git clone git://github.com/soimort/you-get.git
+$ git clone git://github.com/learningpro/you-get.git
 ```
 
 Then put the cloned directory into your `PATH`, or run `./setup.py install` to install `you-get` to a permanent path.
 
-### Option 5: Homebrew (Mac only)
-
-You can install `you-get` easily via:
-
-```
-$ brew install you-get
-```
-
-### Option 6: pkg (FreeBSD only)
-
-You can install `you-get` easily via:
-
-```
-# pkg install you-get
-```
 
 ### Shell completion
 
@@ -131,22 +103,10 @@ Completion definitions for Bash, Fish and Zsh can be found in [`contrib/completi
 
 ## Upgrading
 
-Based on which option you chose to install `you-get`, you may upgrade it via:
-
-```
-$ pip3 install --upgrade you-get
-```
-
-or download the latest release via:
-
-```
-$ you-get https://github.com/soimort/you-get/archive/master.zip
-```
-
 In order to get the latest ```develop``` branch without messing up the PIP, you can try:
 
 ```
-$ pip3 install --upgrade git+https://github.com/soimort/you-get@develop
+$ pip3 install --upgrade git+https://github.com/learningpro/you-get@develop
 ```
 
 ## Getting Started
